@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">StudyOdinApplication</string>
+    <string name="app_name">StudyOdinApp</string>
+    <string name="text_view">I am study development in Pyatigorsk.</string>
 </resources>
