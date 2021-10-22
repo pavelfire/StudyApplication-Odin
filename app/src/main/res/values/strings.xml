@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">StudyOdinApp</string>
-    <string name="text_view">I am study development in Pyatigorsk.</string>
+    <string name="text_view">I am study Android development in Pyatigorsk.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="up_text">Надпись вверху экрана</string>
+    <string name="down_text">Надпись внизу экрана</string>
 </resources>

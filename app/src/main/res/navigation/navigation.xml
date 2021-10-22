@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.vk.directop.studyapplication_odin.StartFragment"
+        android:label="Start Odin" >
+        <action
+            android:id="@+id/action_startFragment_to_constraintLayoutFragment"
+            app:destination="@id/constraintLayoutFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_linearLayoutFragment"
+            app:destination="@id/linearLayoutFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_frameLayoutFragment"
+            app:destination="@id/frameLayoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/constraintLayoutFragment"
+        android:name="com.vk.directop.studyapplication_odin.ConstraintLayoutFragment"
+        android:label="constrain layout"
+        tools:layout="@layout/fragment_constraint_layout" >
+        <action
+            android:id="@+id/action_constraintLayoutFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/linearLayoutFragment"
+        android:name="com.vk.directop.studyapplication_odin.LinearLayoutFragment"
+        android:label="linear layout"
+        tools:layout="@layout/fragment_linear_layout" >
+        <action
+            android:id="@+id/action_linearLayoutFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/frameLayoutFragment"
+        android:name="com.vk.directop.studyapplication_odin.FrameLayoutFragment"
+        android:label="relative layout"
+        tools:layout="@layout/fragment_frame_layout" >
+        <action
+            android:id="@+id/action_frameLayoutFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment" />
+    </fragment>
+</navigation>
