@@ -27,9 +27,8 @@ class StartFragment : Fragment() {
         )
 
         Log.d("My log", "On Create View")
-        binding.bt1.setOnClickListener {
-            binding.bt1.text = "fgf"
-            Log.d("My log", "bt1 pressed")
+        binding.btSRS4.setOnClickListener {
+            Log.d("My log", "btSRS4 pressed")
             this.findNavController().navigate(
                 StartFragmentDirections.actionStartFragmentToConstraintLayoutFragment()    )
         }
@@ -41,6 +40,11 @@ class StartFragment : Fragment() {
             v.findNavController().navigate(
                 StartFragmentDirections.actionStartFragmentToLinearLayoutFragment()    )
         }
+        binding.btSRS4.setOnClickListener {v: View ->
+            v.findNavController().navigate(
+                StartFragmentDirections.actionStartFragmentToTwentySixOctFragment()    )
+        }
+
 
 
 

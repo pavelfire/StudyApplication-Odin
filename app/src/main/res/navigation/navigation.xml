@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_startFragment_to_frameLayoutFragment"
             app:destination="@id/frameLayoutFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_twentySixOctFragment"
+            app:destination="@id/twentySixOctFragment" />
     </fragment>
     <fragment
         android:id="@+id/constraintLayoutFragment"
@@ -48,5 +51,16 @@
             android:id="@+id/action_frameLayoutFragment_to_startFragment"
             app:destination="@id/startFragment"
             app:popUpTo="@id/startFragment" />
+        <action
+            android:id="@+id/action_frameLayoutFragment_to_twentySixOctFragment"
+            app:destination="@id/twentySixOctFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twentySixOctFragment"
+        android:name="com.vk.directop.studyapplication_odin.TwentySixOctFragment"
+        android:label="TwentySixOctFragment" >
+        <action
+            android:id="@+id/action_twentySixOctFragment_to_frameLayoutFragment"
+            app:destination="@id/frameLayoutFragment" />
     </fragment>
 </navigation>

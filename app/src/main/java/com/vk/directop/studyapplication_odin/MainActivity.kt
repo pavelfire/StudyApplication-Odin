@@ -3,7 +3,9 @@ package com.vk.directop.studyapplication_odin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
@@ -27,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         //return NavigationUI.navigateUp(drawerLayout, navController)
         return NavigationUI.navigateUp(navController, null)
     }
+
+
 }
 
 // инициализировать

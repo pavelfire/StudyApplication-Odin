@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/bt1"
+            android:id="@+id/btGenerate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -44,10 +44,10 @@
             android:layout_marginEnd="8dp"
             android:text="Frame Layout"
             app:layout_constraintBottom_toTopOf="@+id/bt3"
-            app:layout_constraintEnd_toEndOf="@+id/bt1"
+            app:layout_constraintEnd_toEndOf="@+id/btGenerate"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/bt1"
-            app:layout_constraintTop_toBottomOf="@+id/bt1" />
+            app:layout_constraintStart_toStartOf="@+id/btGenerate"
+            app:layout_constraintTop_toBottomOf="@+id/btGenerate" />
 
         <Button
             android:id="@+id/bt3"
@@ -73,6 +73,16 @@
             android:layout_marginEnd="8dp"
             android:src="@android:mipmap/sym_def_app_icon"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btSRS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="СРС 4"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
